@@ -1,0 +1,82 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: cloud management MODEM APIs
+  description: API documentation for cloud modem
+paths:
+  /api/auth/signup:
+    post:
+      summary: User sign up
+      tags:
+        - Auth
+      parameters:
+        - in: body
+          name: body
+          description: Request body
+          required: true
+          schema:
+            type: object
+            properties:
+              username:
+                type: string
+              password:
+                type: string
+              type:
+                type: string
+                enum:
+                  - member
+                  - owner
+                  - admin
+      responses:
+        200:
+          description: User sign up successful
+        400:
+          description: Invalid request or validation error
+        500:
+          description: Internal server error
+  /api/auth/login:
+    post:
+      summary: User login
+      tags:
+        - Auth
+      parameters:
+        - in: body
+          name: body
+          description: Request body
+          required: true
+          schema:
+            type: object
+            properties:
+              username:
+                type: string
+              password:
+                type: string
+      responses:
+        200:
+          description: User login successful
+        401:
+          description: Unauthorized, invalid credentials
+        500:
+          description: Internal server error
+  /api/auth/tokenRefresh:
+    post:
+      summary: Refresh token
+      tags:
+        - Auth
+      parameters:
+        - in: body
+          name: body
+          description: Request body
+          required: true
+          schema:
+            type: object
+            properties:
+              refreshToken:
+                type: string
+      responses:
+        200:
+          description: successful
+        401:
+          description: Unauthorized, invalid credentials
+        500:
+          description: 'No create new TOKEN'

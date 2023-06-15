@@ -1,0 +1,9 @@
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"Command failed: traceroute 192.168.234.254\n'traceroute' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n"}
+{"level":"error","message":"Command failed: ping -c 5 192.168.234.254\n"}
+{"level":"error","message":"Command failed: ping -c 5 192.168.234.254\n"}
+{"level":"error","message":"Command failed: ping -c 5 192.168.234.254\n"}
+{"level":"error","message":"Command failed: traceroute 192.168.234.254\n'traceroute' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n"}
