@@ -31,7 +31,7 @@ const hashPassword = (req, res, next) => {
 
 const checkExistingUser = async (req, res, next) => {
   const { user } = req.body;
-  const existingUser = await User.findOne({ user });
+  const existingUser = await User.findOne({ username });
 
   if (existingUser) {
     const errMsg = 'User already exists';

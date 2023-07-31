@@ -29,25 +29,39 @@ const hashPassword = (req, res, next) => {
   });
 };
 
-const signUp = (req, res) => {
+const signUp = async (req, res) => {
   const newUser = new User({
     _id: new mongoose.Types.ObjectId(),
     ...req.body,
   });
-  return newUser
-    .save()
-    .then((data) => {
-      const { _id, user, type } = data;
-      return successRes(res, { _id, user, type });
+  try {
+    const data = await newUser.save();
+    const { _id, username, type } = data;
+    return successRes(res, { _id, username, type });
+  } catch (err) {
+    return errorRes(res, err, 'unable to create user');
+  }
+};
+
+const checkUsername = (req, res, next) => {
+  const { username } = req.body;
+  User.findOne({ username }, { lean: true })
+    .then((user) => {
+      console.log(user, 'user');
+      if (user) {
+        const err = 'Username already exists';
+        return errorRes(res, err, err, 404);
+      }
+      return next();
     })
     .catch((err) => {
-      return errorRes(res, err, 'unable to create user');
+      errorRes(res, err, 'Error finding Username');
     });
 };
 
 const findByUser = (req, res, next) => {
-  const { user, password } = req.body;
-  User.findOne({ user }, '+password', { lean: true })
+  const { username, password } = req.body;
+  User.findOne({ username }, '+password', { lean: true })
     .then((data) => {
       if (!data) return errorRes(res, 'invalid login', 'invalid password or email');
       req.body = { unhashedPassword: password, ...data };
@@ -78,6 +92,9 @@ const login = (req, res) => {
       expiresIn: refreshTokenLife,
     });
     const data = {
+      info: {
+        type: req.body.type,
+      },
       token: token,
       refreshToken: refreshToken,
     };
@@ -127,10 +144,9 @@ const getRefreshToken = (req, res) => {
   });
 };
 
-
 router
 
-  .post('/signup', isValidPassword, hashPassword, signUp)
+  .post('/signup', checkUsername, isValidPassword, hashPassword, signUp)
   .post('/login', findByUser, verifyPassword, login)
   .post('/tokenRefresh', getRefreshToken)
 

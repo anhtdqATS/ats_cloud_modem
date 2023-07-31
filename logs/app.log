@@ -7,3 +7,91 @@
 {"level":"error","message":"Command failed: ping -c 5 192.168.234.254\n"}
 {"level":"error","message":"Command failed: ping -c 5 192.168.234.254\n"}
 {"level":"error","message":"Command failed: traceroute 192.168.234.254\n'traceroute' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n"}
+{"level":"error","message":"invalid signature","name":"JsonWebTokenError"}
+{"_message":"User validation failed","errors":{"user":{"kind":"required","message":"Path `user` is required.","name":"ValidatorError","path":"user","properties":{"message":"Path `user` is required.","path":"user","type":"required"}}},"level":"error","message":"User validation failed: user: Path `user` is required.","name":"ValidationError"}
+{"level":"error"}
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error","message":"no routes"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"invalid login"}
+{"level":"error"}
+{"level":"error","message":"invalid login"}
+{"level":"error"}
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"invalid login"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"invalid login"}
+{"_message":"User validation failed","errors":{"username":{"kind":"required","message":"Path `username` is required.","name":"ValidatorError","path":"username","properties":{"message":"Path `username` is required.","path":"username","type":"required"}}},"level":"error","message":"User validation failed: username: Path `username` is required.","name":"ValidationError"}
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"invalid login"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error","message":"invalid login"}
+{"_message":"User validation failed","errors":{"username":{"kind":"required","message":"Path `username` is required.","name":"ValidatorError","path":"username","properties":{"message":"Path `username` is required.","path":"username","type":"required"}}},"level":"error","message":"User validation failed: username: Path `username` is required.","name":"ValidationError"}
+{"_message":"User validation failed","errors":{"username":{"kind":"required","message":"Path `username` is required.","name":"ValidatorError","path":"username","properties":{"message":"Path `username` is required.","path":"username","type":"required"}}},"level":"error","message":"User validation failed: username: Path `username` is required.","name":"ValidationError"}
+{"_message":"User validation failed","errors":{"username":{"kind":"required","message":"Path `username` is required.","name":"ValidatorError","path":"username","properties":{"message":"Path `username` is required.","path":"username","type":"required"}}},"level":"error","message":"User validation failed: username: Path `username` is required.","name":"ValidationError"}
+{"_message":"User validation failed","errors":{"username":{"kind":"required","message":"Path `username` is required.","name":"ValidatorError","path":"username","properties":{"message":"Path `username` is required.","path":"username","type":"required"}}},"level":"error","message":"User validation failed: username: Path `username` is required.","name":"ValidationError"}
+{"_message":"User validation failed","errors":{"username":{"kind":"required","message":"Path `username` is required.","name":"ValidatorError","path":"username","properties":{"message":"Path `username` is required.","path":"username","type":"required"}}},"level":"error","message":"User validation failed: username: Path `username` is required.","name":"ValidationError"}
+{"_message":"User validation failed","errors":{"username":{"kind":"required","message":"Path `username` is required.","name":"ValidatorError","path":"username","properties":{"message":"Path `username` is required.","path":"username","type":"required"}}},"level":"error","message":"User validation failed: username: Path `username` is required.","name":"ValidationError"}
+{"_message":"User validation failed","errors":{"username":{"kind":"required","message":"Path `username` is required.","name":"ValidatorError","path":"username","properties":{"message":"Path `username` is required.","path":"username","type":"required"}}},"level":"error","message":"User validation failed: username: Path `username` is required.","name":"ValidationError"}
+{"level":"error","message":"Username already exists"}
+{"level":"error","message":"Username already exists"}
+{"level":"error","message":"invalid password: 123"}
