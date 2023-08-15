@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const modemSchema = new mongoose.Schema({
   name: { type: String, required: true },
@@ -8,7 +8,7 @@ const modemSchema = new mongoose.Schema({
   lat: String,
   lng: String,
   type: { type: String, required: true },
-  group: { type: mongoose.Schema.Types.ObjectId, ref: "Group" },
+  group: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'Group' },
 });
 
-module.exports = mongoose.model("Modem", modemSchema);
+module.exports = mongoose.model('Modem', modemSchema);

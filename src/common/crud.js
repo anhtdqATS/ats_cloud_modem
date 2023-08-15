@@ -1,5 +1,5 @@
-const { errData, errorRes, successRes } = require("../common/response");
-const mongoose = require("mongoose");
+const { errData, errorRes, successRes } = require('../common/response');
+const mongoose = require('mongoose');
 
 const create = (model, populate = []) => {
   return async (req, res) => {
@@ -46,9 +46,7 @@ const update = (model, populate = []) => {
   return async (req, res) => {
     try {
       req.body.updated_at = new Date();
-      const updatedData = await model
-        .findByIdAndUpdate(req.params._id, req.body, { new: true })
-        .populate(...populate);
+      const updatedData = await model.findByIdAndUpdate(req.params._id, req.body, { new: true }).populate(...populate);
       successRes(res, updatedData);
     } catch (error) {
       errorRes(res, error);
@@ -60,7 +58,7 @@ const remove = (model) => {
   return async (req, res) => {
     try {
       await model.deleteOne({ _id: req.params._id });
-      successRes(res, { message: "success" });
+      successRes(res, { message: 'success' });
     } catch (error) {
       errorRes(res, error);
     }
