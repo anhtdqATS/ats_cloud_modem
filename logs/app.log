@@ -3259,3 +3259,35 @@
 {"level":"error"}
 {"level":"error"}
 {"expiredAt":"2023-08-15T06:41:26.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError"}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"level":"error","message":"invalid login"}
+{"level":"error","message":"invalid signature","name":"JsonWebTokenError"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"code":13,"codeName":"Unauthorized","level":"error","ok":0}
+{"level":"error"}
+{"level":"error"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"no routes"}
+{"level":"error","message":"Command failed: ping -c 5 192.168.234.254\n"}

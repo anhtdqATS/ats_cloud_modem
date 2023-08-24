@@ -49,7 +49,6 @@ const checkUsername = async (req, res, next) => {
   const { username } = req.body;
   try {
     const user = await User.findOne({ username }).lean();
-
     if (user) {
       const err = 'Username already exists';
       return errorRes(res, err, err, 404);

@@ -1,14 +1,15 @@
 require('dotenv').config();
-const swaggerDocs = require('../swagger.js');
 const { requestLogger } = require('./logger');
 const express = require('express');
 const mongoose = require('mongoose');
 const logger = require('morgan');
 const cors = require('cors');
+const { MONGO_USER, MONGO_PASS, DB_String } = require('./config');
 
-const mongoString = process.env.DATABASE_URL;
+const authOptions = { username: MONGO_USER, password: MONGO_PASS };
+const options = { useNewUrlParser: true, useUnifiedTopology: true, auth: authOptions };
 
-mongoose.connect(mongoString);
+mongoose.connect(DB_String, options);
 const database = mongoose.connection;
 
 database.on('error', (error) => {
@@ -34,5 +35,4 @@ app.get('/health', (req, res) => {
 
 app.listen(3000, () => {
   console.log(`Server Started at ${3000}`);
-  swaggerDocs(app, 3000);
 });
